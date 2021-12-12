@@ -1,3 +1,5 @@
+import { listenerCount } from "stream";
+
 export class Satellite {
 
 	name: string;
@@ -21,3 +23,4 @@ export class Satellite {
 }
 
 // TODO 3a: fix isSpaceDebris check
+ç
