@@ -1,4 +1,4 @@
-import { listenerCount } from "stream";
+// import { listenerCount } from "stream";
 
 export class Satellite {
 
@@ -7,6 +7,7 @@ export class Satellite {
 	launchDate: string;
 	orbitType: string;
 	operational: boolean;
+	
 
 	constructor(name: string, type: string, launchDate: string, orbitType: string, operational: boolean) {
 		this.name = name;
@@ -15,11 +16,17 @@ export class Satellite {
 		this.orbitType = orbitType;
 		this.operational = operational;
    }
-	
-	isSpaceDebris(): boolean {
-		return true;
-   }
+   
+   isSpaceDebris(): boolean {
+	if (this.type === "Space Debris"){
+		return true
+	} else {
+		return false
+	}
+	};
+   
+};
 
-}
+	
 
 // TODO 3a: fix isSpaceDebris check
