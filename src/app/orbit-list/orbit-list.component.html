@@ -8,13 +8,14 @@
     </tr>
     <tr class="data-row" *ngFor = "let data of satellites">
         <td>{{data.name}}</td>
-        <td [class.warning]="isSpaceDebris">{{data.type}}</td>
+        <td [class.warning]="data.isSpaceDebris()">{{data.type}}</td>
         <td>{{data.operational}}</td>
         <td>{{data.orbitType}}</td>
         <td>{{data.launchDate}}</td>
     </tr>
 </table>
 
+<!-- addMovie(newMovie.value) -->
 <!-- TODO 2b: use *ngFor to display satellite data in the table -->
 <!-- TODO 3b: add style directive to conditionally highlight satellite type -->
 
