@@ -1,6 +1,16 @@
-<h3>Satellite Count:</h3>
+<h3 >Satellite Count:</h3>
 <div class="counts">
-	<div>Total: <span class="counts-total">NaN</span></div>
-</div>
+<div >Total: <span class="counts-total" >{{satellites.length}}</span></div>
 
 <!-- TODO 4: add logic to count number of satellites displayed -->
+<!-- *ngFor='let in of counter(5) ;let i = index' -->
+<!-- *ngFor="let selected of satellites" "countByType(selected)"
+<!-- *ngFor="let contact of contacts | async; index as i; count as c; -->
+<!-- *ngFor="let selected of satellites; countByType" -->
+
+<!-- only do total satellites-- don't need a loop --don't need extra code, do it inline (search a method to find total count) -->
+	<!-- <div>Total: <span [class.counts-total]="selected.countByType()">{{}}</span></div> -->
+	<!-- <div >Total: <span class="counts-total"> {{countTotal(i)}}</span></div> -->
+	<!-- <div >Total: <span class="counts-total; selected.name.countTotal(); count as c"> {{selected(c)}}</span></div> -->
+
+	
